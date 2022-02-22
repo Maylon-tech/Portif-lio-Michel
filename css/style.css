@@ -1,0 +1,134 @@
+@import "variaveis";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+.container {
+    width: 1170px;
+    margin: 0px auto;
+}
+
+/*      HOME        */
+
+#home {
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.7)),url(../img/michel\ self.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    height: 100vh;
+    color: #fff;
+}
+#home .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    background: transparent;
+}
+#home .header .logo {
+    width: 100%;
+    margin-left: 30px;
+}
+#home .header .logo h1 {
+    font-size: 2rem;
+}
+#home .header .logo h1 span {
+    color: rgb(235, 55, 55);
+}
+#home .header .logo h1 span:first-child {
+    border-bottom: 2px solid #fff;
+    font-size: 1.8rem;
+}
+#home .header .logo h1 span:last-child {
+    color: #fff;
+    font-size: 1.1rem;
+    letter-spacing: -1px;
+}
+   
+
+
+#home .header .navbar {
+    width: 700px;
+}
+#home .header .navbar ul {
+    display: flex;
+    list-style: none;
+    margin-right: 35px;
+
+}
+#home .header .navbar li {
+    margin: 0px 10px;
+    padding: 7px;
+}
+#home .header .navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px;
+    text-transform: uppercase;
+    position: relative;
+    transform: .4s ease;
+}
+#home .header .navbar a:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: all 700ms ease;
+}
+#home .header .navbar a:hover:before {
+    width: 100%;
+}
+
+
+#home .content {
+    border: 2px solid red;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#home .content .text-left {
+    border: 2px solid blue;
+    width: 400px;
+    
+}
+
+#home .content .icons-right{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#home .content .icons-right a {
+    padding: 7px;
+    margin: 20px 0px;
+}
+#home .content .icons-right ion-icon {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*      ABOUT        */
