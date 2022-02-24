@@ -32,19 +32,23 @@ body {
     height: 10vh;
     background: transparent;
 }
+
+/*      LOGO       */
+
+
 #home .header .logo {
     width: 100%;
-    margin-left: 30px;
+    margin-left: 60px;
 }
 #home .header .logo h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 #home .header .logo h1 span {
     color: rgb(235, 55, 55);
 }
 #home .header .logo h1 span:first-child {
     border-bottom: 2px solid #fff;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 #home .header .logo h1 span:last-child {
     color: #fff;
@@ -52,7 +56,7 @@ body {
     letter-spacing: -1px;
 }
    
-
+/*      NAVBAR     */
 
 #home .header .navbar {
     width: 700px;
@@ -90,21 +94,63 @@ body {
     width: 100%;
 }
 
+/*      MAIN  SCREEM     */
 
 #home .content {
-    border: 2px solid red;
     height: 90vh;
     display: flex;
     justify-content: space-between;
 }
 
+/*      LEFT     */
+
 #home .content .text-left {
-    border: 2px solid blue;
     width: 400px;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 40px;
+}
+#home .content .text-left h3 {
+    letter-spacing: 1px;
+}
+#home .content .text-left h1 {
+    font-size: 3rem;
+}
+#home .content .text-left h2 {
+    font-size: 2rem;
+}
+#home .content .text-left h2 span {
+    color: rgb(235, 55, 55);
+}
+#home .content .text-left .link-btn {
+    display: flex;
+    align-items: flex-start;
+    margin: 25px 0;
+}
+#home .content .text-left .link-btn button {
+    padding: 10px;
+    margin: 8px 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid var(--darkGreenBlue);
+    border-radius: 9px;
+    background-color: var(--mediumGreen);
 }
 
+#home .content .text-left
+
+
+
+
+
+/*      RIGHT    */
+
+
 #home .content .icons-right{
+    border: 2px solid green;
+    background-color: aqua;
     width: 250px;
     display: flex;
     flex-direction: column;
@@ -112,6 +158,7 @@ body {
     align-items: center;
 }
 #home .content .icons-right a {
+    border: 2px solid blue;
     padding: 7px;
     margin: 20px 0px;
 }
@@ -119,6 +166,9 @@ body {
     color: #fff;
     width: 40px;
     height: 40px;
+}
+#home .content .icons-right ion-icon:hover {
+    color: var(--mediumGreen);
 }
 
 
