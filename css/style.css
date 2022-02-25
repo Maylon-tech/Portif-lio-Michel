@@ -11,7 +11,8 @@ body {
     font-family: 'Lato', sans-serif;
 }
 .container {
-    width: 1170px;
+    max-width: 1920px;
+    min-width: 1260px;
     margin: 0px auto;
 }
 
@@ -139,18 +140,16 @@ body {
     background-color: var(--mediumGreen);
 }
 
-#home .content .text-left
-
-
-
+#home .content .text-left .link-btn button:hover {
+    background-color: var(--mediumGreen);
+    cursor: pointer;
+}
 
 
 /*      RIGHT    */
 
 
-#home .content .icons-right{
-    border: 2px solid green;
-    background-color: aqua;
+#home .content .icons-right {
     width: 250px;
     display: flex;
     flex-direction: column;
@@ -158,7 +157,6 @@ body {
     align-items: center;
 }
 #home .content .icons-right a {
-    border: 2px solid blue;
     padding: 7px;
     margin: 20px 0px;
 }
@@ -173,12 +171,33 @@ body {
 
 
 
-
-
-
-
-
-
-
-
 /*      ABOUT        */
+
+#about {
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+#about .container {
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+}
+
+#about .image-box{
+    border: 2px solid black;
+    width: 500px;
+    height: 500px;
+    background-image: url(../img/michel\ at\ desk.png);
+
+background-position: center center;}
+
+#about .text-box {
+    border: 2px solid black;
+    width: 500px;
+    height: 500px;
+}
+}
+
+#about 
