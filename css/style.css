@@ -135,13 +135,16 @@ body {
     margin: 8px 10px;
     font-size: 1rem;
     font-weight: 600;
-    border: 2px solid var(--darkGreenBlue);
+    border: 2px solid var(--softlyRed);
     border-radius: 9px;
-    background-color: var(--mediumGreen);
+    background-color: transparent;
+    color: #fff;
+    transition: 0.3s ease;
 }
 
 #home .content .text-left .link-btn button:hover {
-    background-color: var(--mediumGreen);
+    background-color: var(--lightGray);
+    
     cursor: pointer;
 }
 
@@ -175,29 +178,59 @@ body {
 
 #about {
     height: 100vh;
-    background-color: aquamarine;
+    background-color:#222;
+    padding: 50px 0px;
+    background-image: url(../img/bg-grad.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #about .container {
-    border: 2px solid red;
     display: flex;
     justify-content: space-around;
     width: 900px;
 }
 
 #about .image-box{
-    border: 2px solid black;
-    width: 500px;
-    height: 500px;
-    background-image: url(../img/michel\ at\ desk.png);
-
-background-position: center center;}
-
+    width: 280px;
+    height: 350px;
+    margin: 100px 0 90px 270px;
+}
+#about .image-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.7));
+}
 #about .text-box {
-    border: 2px solid black;
     width: 500px;
     height: 500px;
-}
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-#about 
+#about .text-box h2 {
+    font-size: 2rem;
+    padding-bottom: 15px;
+}
+#about .text-box p {
+    padding: 30px;
+    line-height:24px;
+}
+
+#about .text-box a {
+    border: 2px solid var(--softlyRed);
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+#about .text-box a:hover {
+    background-color: var( --lightGray);
+}
