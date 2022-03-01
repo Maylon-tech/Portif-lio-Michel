@@ -19,7 +19,7 @@ body {
 /*      HOME        */
 
 #home {
-    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.7)),url(../img/michel\ self.png);
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.9)),url(../img/michel\ self.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top;
@@ -233,7 +233,6 @@ body {
     text-align: left;
     font-size: 1.2rem;
 }
-
 #about .text-box a {
     border: 2px solid var(--softlyRed);
     padding: 12px 20px;
@@ -242,10 +241,80 @@ body {
     font-size: 1.3rem;
     text-decoration: none;
     color: #fff;
-    transition: all 0.3s ease;
-    
-    
+    transition: all 0.3s ease;    
 }
 #about .text-box a:hover {
     background-color: var( --lightGray);
+}
+
+
+/*      HABILIDADES        */
+
+
+#habilidade {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.7)),url(../img/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#habilidade .container {
+    width: 950px;
+    height: 100%;
+}
+#habilidade .title-skill {
+    
+}
+#habilidade .title-skill h1{
+   font-size: 2.3rem;
+   font-family: 'Lato', sans-serif;
+   padding: 25px 0px;
+   text-align: center;
+}
+
+#habilidade .skill-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    height: 85vh;
+    color: #fff;
+}
+
+#habilidade .skill-content .skill-block {
+    border: 2px solid var(--softlyRed);
+    border-radius: 9px;
+    height: 50vh;
+    margin: 0px 20px;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#habilidade .skill-content .skill-block ion-icon {
+    color: var(--softlyRed);
+    font-size: 5rem;
+    padding: 40px 0px;
+}
+#habilidade .skill-content .skill-block .text-block {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#habilidade .skill-content .skill-block .text-block p {
+    text-align: justify;
+    padding: 0px 15px;
+    line-height: 15px;
+}
+#habilidade .skill-content .skill-block .text-block button {
+    padding: 12px 20px;
+    background-color: var(--softlyRed);
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 9px;
+    margin: 20px auto;
 }
