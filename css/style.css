@@ -389,6 +389,10 @@ body {
 #contato {
     height: 90vh;
      border: 2px solid rgb(126, 134, 10);
+     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/Wall-gray.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
    
 }
 #contato .container {
@@ -403,7 +407,6 @@ body {
 }
 
 #contato .right-content {
-    border: 2px solid blue;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -411,43 +414,115 @@ body {
     height: 100%;
 }
 #contato .right-content .icons {
-    border: 2px solid rgb(10, 88, 133);
     height: 100%;
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin-right: 15px;
 }
 #contato .right-content .icons ion-icon{
-    font-size: 30px;
+    font-size: 40px;
+    color: #fff;
 }
+
 #contato .right-content .info {
-    border: 2px solid rgb(231, 93, 213);
+
     height: 100%;
     width: 70%;
     padding: 10px;
     display: flex;
     flex-direction: column;
     margin: 0px 15px;
+    align-items: flex-start;
+   
+    color: #fff;
+}
+#contato .right-content .info h2 {
+    border-bottom: 4px solid white;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    padding-bottom: 7px;
+}
+#contato .right-content .info .info-block {
+    display: flex;
     align-items: center;
-    justify-content: space-between;
+    padding: 8px;
+    margin: 20px 0px;
+    border-bottom: 3px solid var(--strongRed);
+    width: 100%;
+}
+#contato .right-content .info .info-block ion-icon {
+    padding: 8px;
+    font-size: 2.5rem;
+}
+#contato .right-content .info .info-block p {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-left: 15px;
 }
 
-
 #contato .left-content {
-    border: 2px solid green;
     width: 45%;
     height: 100%;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#contato .left-content h2 {
+    border-bottom: 4px solid white;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    padding-bottom: 7px;
+    color: #fff;
+    width: 50%;
 }
 
+#contato .left-content .email {
+    padding: 15px 0px;
+    width: 100%;
+  
+}
 
+#contato .left-content .nome {
+    padding: 15px 0px;
+    width: 100%;
+    margin: 8px 0px;
+}
 
+#contato .left-content .textarea {
+    padding: 15px 0px;
+    width: 100%;  
+    height: 100%;
+}
+
+#contato .left-content input {
+    padding: 17px;
+    width: 100%;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    font-size: 1.3rem;
+}
+#contato .left-content textarea {
+    padding: 17px;
+    width: 100%;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    font-size: 1.3rem;
+    height: 40%;
+}
 .footer {
     height: 10vh;
     border: 2px solid purple;
+    background-color: #222;
 }
 .footer p {
     text-align: center;
+    color: var(--softlyRed);
+    font-size: 2rem;
+    padding: 15px 0px;
 }
