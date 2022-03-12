@@ -1,4 +1,4 @@
-@import "variaveis";
+@import "variavel.css";
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 * {
@@ -185,8 +185,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border-bottom: 5px solid red;
 }
-
 #about .container {
     display: flex;
     justify-content: space-around;
@@ -204,7 +204,6 @@ body {
     border-radius: 12px;
     border: 2px solid var(--softlyRed);
 }
-
 #about .text-box {
     width: 45%;
     height: 80vh;
@@ -214,7 +213,6 @@ body {
     align-items: flex-start;
     justify-content: center;
 }
-
 #about .text-box h2 {
     font-size: 3rem;
     padding-bottom: 40px;
@@ -257,6 +255,7 @@ body {
     background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.7)),url(../img/logo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 #habilidade .container {
     height: 100%;
@@ -264,9 +263,6 @@ body {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-}
-#habilidade .title-skill {
-    
 }
 #habilidade .title-skill h1{
    font-size: 2.3rem;
@@ -387,19 +383,15 @@ body {
 
 
 #contato {
-    height: 90vh;
-     border: 2px solid rgb(126, 134, 10);
-     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/Wall-gray.jpg);
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center;
-   
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/Wall-gray.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 #contato .container {
     height: 80vh;
     padding: 20px;
-    border: 2px solid red;
-   
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -428,7 +420,6 @@ body {
 }
 
 #contato .right-content .info {
-
     height: 100%;
     width: 70%;
     padding: 10px;
@@ -436,7 +427,6 @@ body {
     flex-direction: column;
     margin: 0px 15px;
     align-items: flex-start;
-   
     color: #fff;
 }
 #contato .right-content .info h2 {
@@ -470,6 +460,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: flex-start;
 }
 #contato .left-content h2 {
     border-bottom: 4px solid white;
@@ -479,25 +470,20 @@ body {
     color: #fff;
     width: 50%;
 }
-
 #contato .left-content .email {
     padding: 15px 0px;
     width: 100%;
-  
 }
-
-#contato .left-content .nome {
+#contato .left-content .Nome {
     padding: 15px 0px;
     width: 100%;
     margin: 8px 0px;
 }
-
 #contato .left-content .textarea {
     padding: 15px 0px;
     width: 100%;  
     height: 100%;
 }
-
 #contato .left-content input {
     padding: 17px;
     width: 100%;
@@ -506,6 +492,10 @@ body {
     border: none;
     font-size: 1.3rem;
 }
+#contato .left-content.erro {
+    border: 2px solid red;
+}
+
 #contato .left-content textarea {
     padding: 17px;
     width: 100%;
@@ -515,14 +505,34 @@ body {
     font-size: 1.3rem;
     height: 40%;
 }
+#contato #botao {
+    margin: 15px 0px;
+    padding: 12px;
+    margin-bottom: 100px;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+    background-color: var(--softlyRed);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    transition: all .3s ease;
+}
+#contato #botao:hover {
+    background-color: var(--lightGray);
+}
+
+
+/*  FOOTER   */
+
 .footer {
     height: 10vh;
-    border: 2px solid purple;
-    background-color: #222;
+    background-color: rgba(19, 16, 16, 0.75);
 }
 .footer p {
     text-align: center;
     color: var(--softlyRed);
     font-size: 2rem;
     padding: 15px 0px;
+    color: #fff;
 }

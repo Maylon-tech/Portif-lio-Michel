@@ -163,18 +163,6 @@
 
             <div class="right-content">
 
-
-                <div class="icons">
-
-                    <ion-icon name="logo-instagram"></ion-icon>
-
-                    <ion-icon name="logo-facebook"></ion-icon>
-
-                    <ion-icon name="logo-github"></ion-icon>
-
-                    <ion-icon name="logo-linkedin"></ion-icon>
-
-                </div>
                 <div class="info">
                     <h2>Contact with me</h2>
                     <div class="info-block">
@@ -195,32 +183,33 @@
 
             </div>
 
-            <div class="left-content">
+            <form id="formulario" class="left-content">
 
                 <h2>Fill the form</h2>
 
-                <div class="email">
-                    <input type="text" name="nome" placeholder="Nome">
+                <div class="Nome">
+                    <input id="inputName" type="text" name="nome" placeholder="Nome">
                 </div>
 
-                <div class="nome">
-                    <input type="text" name="email" placeholder="E-amil">
+                <div class="email">
+                    <input id="inputEmail" type="text" name="email" placeholder="E-amil">
                 </div>
                 
                 <div class="textarea">
                     <textarea name="campo" id="campo" cols=7" rows="10" placeholder="Deixe seus comentários"></textarea>
+                    <button type="submit" id="botao">ENVIAR</button>
                 </div>
 
-            </div>
+            </form>
             
         </div>
     </main>
 
     <footer class="footer">
-        <p> --- footer ---</p>
+        <p> --- Desenvoilvido por DevMaylon ---</p>
     </footer>
 
-
+    <script src="shellport.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
