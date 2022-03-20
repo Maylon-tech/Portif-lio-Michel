@@ -43,7 +43,7 @@
 
                 <h3>Olá! Meu nome é</h3>
                 <h1>Michel Nemoto</h1>
-                <h2>Sou Desenvolvedor <span>Web</span></h2>
+                <h2>Sou Desenvolvedor <span class="auto-type"></span></h2>
 
                 <div class="link-btn">
 
@@ -81,7 +81,7 @@
 
                 <h2>Sobre mim</h2>
 
-                <h3>Desenvolvedor Web & <span>Designer</span></h3>
+                <h3>Desenvolvedor Web & <span class="auto-type2"></span></h3>
 
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -91,8 +91,24 @@
                     facere ex totam. Delectus repellat provident odio.
                 </p>
 
-                <a href="#">Contrata-me</a>
+                <a id="botao" href="#">Contrata-me</a>
+                <div class="modal-box">
+                    <div class="content-modal">
+                        <img src="" alt="">
+                        <div class="text-modal">
+                            <h3>Michel Nemoto</h3>
+                            <h4>DevWeb & Freelancer</h4>
+                        </div>
+                        <span class="xmark"></span>
 
+                        <textarea name="massge" cols="30" rows="10" placeholder="Enter your massage"></textarea>
+                        <div class="button-modal">
+                            <button id="btn-cancel">Cancel</button>
+                            <button id="btn-send">Send</button>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
         </div>
@@ -209,6 +225,7 @@
         <p> --- Desenvoilvido por DevMaylon ---</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="shellport.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

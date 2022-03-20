@@ -107,7 +107,7 @@ body {
 /*      LEFT     */
 
 #home .content .text-left {
-    width: 400px;
+    width: 460px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,6 +133,7 @@ body {
 }
 #home .content .text-left .link-btn button {
     padding: 10px;
+    display: block;
     margin: 8px 10px;
     font-size: 1rem;
     font-weight: 600;
@@ -141,12 +142,21 @@ body {
     background-color: transparent;
     color: #fff;
     transition: 0.3s ease;
-}
-
-#home .content .text-left .link-btn button:hover {
-    background-color: var(--lightGray);
-    
+    position: relative;
+    overflow: hidden;
     cursor: pointer;
+}
+.link-btn button::before {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    transition: .6s ease;
+    background-color: aqua;
+}
+.link-btn button:hover::before  {
+    
+    width: 100%;   
 }
 
 
@@ -181,7 +191,7 @@ body {
     height: 100vh;
     background-color:#222;
     padding: 50px 0px;
-    background-image: url(../img/bg-grad.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/482-4824061_transparent-smoke-png-image-free-download-searchpng-smoke.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -198,7 +208,7 @@ body {
     width: 30%;
     height: 50vh;
     margin-top: 60px;
-    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(../img/IMG_0787-removebg-preview.png);
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(../img/michel\ teenager\ no\ shaved].jpg);
     background-size: 100% 100%;
     background-position: center center;
     border-radius: 12px;
@@ -245,6 +255,12 @@ body {
     background-color: var( --lightGray);
 }
 
+#about .text-box .modal-box {
+    width: 400px;
+    height: 380px;
+    position: absolute;
+    background-color: antiquewhite;
+}
 
 /*      HABILIDADES        */
 
@@ -492,7 +508,7 @@ body {
     border: none;
     font-size: 1.3rem;
 }
-#contato .left-content.erro {
+#contato .left-content input.erro {
     border: 2px solid red;
 }
 

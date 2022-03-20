@@ -21,3 +21,16 @@ formulario.onsubmit = (evento) => {
     }
 }
 
+let typed = new Typed('.auto-type', {
+    strings: ['Web', 'Freelancer', 'Youtuber'],
+    typeSpeed: 150,
+    backSpeed: 150,
+    loop: true
+})
+
+let typed2 = new Typed('.auto-type2', {
+    strings: ['Freelancer', 'Youtuber'],
+    typeSpeed: 150,
+    backSpeed: 150,
+    loop: true
+})
